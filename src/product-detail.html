@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>상품 상세</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="productDetail">
+      <h2 id="title">로딩 중...</h2>
+      <img id="image" src="" alt="" style="width: 200px" />
+      <p id="price"></p>
+      <p id="description"></p>
+
+      <label
+        >수량: <input type="number" id="quantity" value="1" min="1"
+      /></label>
+      <button id="orderBtn">주문하기</button>
+    </div>
+
+    <hr />
+    <h3>리뷰 목록</h3>
+    <div id="reviewList"></div>
+
+    <h4>리뷰 작성</h4>
+    <form id="reviewForm">
+      <textarea
+        id="reviewContent"
+        placeholder="리뷰를 작성하세요"
+        required
+      ></textarea
+      ><br />
+      <button type="submit">리뷰 등록</button>
+    </form>
+
+    <script src="js/common.js"></script>
+    <script src="js/product-detail.js"></script>
+  </body>
+</html>
